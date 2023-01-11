@@ -1,12 +1,12 @@
 import  "./form-input.css"
-const FormInput = (props) => {
+const FormInput = ({id, labelName, placeholder,inputType,  ...rest}) => {
   return (
     <div className="container">
-      <label htmlFor={props.id}> {props.labelNmae}</label>
+      <label htmlFor={id}> {labelName}</label>
       <input
-        placeholder={props.placeholder || "..."}
-        id={props.id}
-        type={props.inputType}
+        placeholder={placeholder || "..."}
+        id={id}
+        type={inputType} {...rest}
       />
     </div>
   );

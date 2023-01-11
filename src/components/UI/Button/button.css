@@ -1,6 +1,17 @@
 .button{
-    background-color: blueviolet;
-    color: white;
-    padding: 20px, 30px;
+    background-color: rgb(120, 121, 170);
+    color: rgba(255, 255, 255, 0.315);
+    padding: 17px;
     border-radius: 10px;
+    border: 1px blue solid;
+}
+body{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    background-color: rgba(128, 128, 128, 0.021);
+}
+.btn{
+    display: flex;
+    justify-content: center;
 }

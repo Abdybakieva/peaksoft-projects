@@ -1,9 +1,11 @@
 import ExpenseItem from "../expense-item/ExpenseItem";
+import "./Expense.css";
 
-const Expenses = (props) => {
+
+const Expenses = ({expenses}) => {
   return (
-    <ul style={{ padding: '20px' , border:"2px solid black"}}>
-      {props.expenses.map((elem) => {
+    <ul className="ul">
+      {expenses.map((elem) => {
         return (
           <ExpenseItem
             key={elem.title}
